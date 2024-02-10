@@ -1,0 +1,213 @@
+{% include "header.html" %}
+
+            <!-- Masthead-->
+            <header class="masthead">
+            {% with messages = get_flashed_messages() %}
+              {% if messages %}
+                {% for message in messages %}
+                  <div class="alert alert-success" role="alert">{{ message }}</div>
+                {% endfor %}
+              {% endif %}
+            {% endwith %}
+                <div class="container px-4 px-lg-5 h-100">
+                    <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                        <div class="col-lg-8 align-self-end">
+                            <h1 class="text-white font-weight-bold">
+                                Explore Your Creative Potential with Our Pottery Classes</h1>
+                            <hr class="divider" />
+                        </div>
+                        <div class="col-lg-8 align-self-baseline">
+                            <p class="text-white-75 mb-5">
+                                Dive into a world where clay meets imagination,
+                                and every shape crafted opens a new perspective. Our expertly led classes and workshops are
+                                designed for potters of all levels to explore, create, and express themselves through pottery.
+                                Join us and unleash your artistic potential in a space where the art of pottery knows no bounds.
+                                No prior experience required !</p>
+                            <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- About-->
+            <section class="page-section bg-primary" id="about">
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <h2 class="text-white mt-0">We've got what you need!</h2>
+                            <hr class="divider divider-light" />
+                            <p class="text-white-75 mb-4">
+                                I believe that art is more than a skill—it's a way of seeing the world,
+                                expressing oneself, and connecting with others. My mission is to provide a welcoming,
+                                inspirational space where people of all ages and backgrounds can discover their creative
+                                potential.
+                            </p>
+                            <a class="btn btn-light btn-xl" href="#services">Get Started!</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Services-->
+            <section class="page-section" id="services">
+                <div class="container px-4 px-lg-5">
+                    <h2 class="text-center mt-0">At Your Service</h2>
+                    <hr class="divider" />
+                    <div class="row gx-4 gx-lg-5">
+                        <div class="col-lg-3 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="mb-2"></i><i class="bi bi-palette fs-1 text-primary"></i></div>
+                                <h3 class="h4 mb-2">Creative Workshops</h3>
+                                <p class="text-muted mb-0">
+                                    Our workshops are regularly updated to spark your creativity and keep ideas fresh!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="mb-2"><i class="bi bi-brush fs-1 text-primary"></i></div>
+                                <h3 class="h4 mb-2">Artistic Guidance</h3>
+                                <p class="text-muted mb-0">
+                                    We provide up-to-date techniques and personal mentorship to help refine your artistry.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                                <h3 class="h4 mb-2">Creative Community</h3>
+                                <p class="text-muted mb-0">
+                                    Join a nurturing circle of artists in a safe and encouraging space.
+                                    Collaborate, learn, and grow with peers who share your passion for art.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
+                                <h3 class="h4 mb-2">Crafted with Passion</h3>
+                                <p class="text-muted mb-0">
+                                    Every piece and color choice is a testament to the love
+                                    for art we share with you.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Portfolio-->
+            <div id="portfolio">
+                <div class="container-fluid p-0">
+                    <div class="row g-0">
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="portfolio-box" href="/static/assets/img/portfolio/fullsize/1.jpeg" title="Project Name">
+                                <img class="img-fluid" src="/static/assets/img/portfolio/thumbnails/1.jpeg" alt="..." />
+                                <div class="portfolio-box-caption">
+                                    <div class="project-category text-white-50">Tea Pot</div>
+                                    <div class="project-name">Mayriam - Adult - 2023 </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="portfolio-box" href="/static/assets/img/portfolio/fullsize/2.jpeg" title="Project Name">
+                                <img class="img-fluid" src="/static/assets/img/portfolio/thumbnails/2.jpeg" alt="..." />
+                                <div class="portfolio-box-caption">
+                                    <div class="project-category text-white-50">Plate</div>
+                                    <div class="project-name">Nina - Child - 2023</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="portfolio-box" href="/static/assets/img/portfolio/fullsize/3.jpeg" title="Project Name">
+                                <img class="img-fluid" src="/static/assets/img/portfolio/thumbnails/3.jpeg" alt="..." />
+                                <div class="portfolio-box-caption">
+                                    <div class="project-category text-white-50">Fruit Plate</div>
+                                    <div class="project-name">Kari - Adult - 2023</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="portfolio-box" href="/static/assets/img/portfolio/fullsize/4.jpeg" title="Project Name">
+                                <img class="img-fluid" src="/static/assets/img/portfolio/thumbnails/4.jpeg" alt="..." />
+                                <div class="portfolio-box-caption">
+                                    <div class="project-category text-white-50">Cups</div>
+                                    <div class="project-name">Patricia - Adult - 2023</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="portfolio-box" href="/static/assets/img/portfolio/fullsize/5.jpeg" title="Project Name">
+                                <img class="img-fluid" src="/static/assets/img/portfolio/thumbnails/5.jpeg" alt="..." />
+                                <div class="portfolio-box-caption">
+                                    <div class="project-category text-white-50">Cup Before Baking</div>
+                                    <div class="project-name">Patricia - Adult - 2023</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="portfolio-box" href="/static/assets/img/portfolio/fullsize/6.jpeg" title="Project Name">
+                                <img class="img-fluid" src="/static/assets/img/portfolio/thumbnails/6.jpeg" alt="..." />
+                                <div class="portfolio-box-caption p-3">
+                                    <div class="project-category text-white-50">Mexican Skull</div>
+                                    <div class="project-name">Patricia - Adult - 2023</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Call to action
+            <section class="page-section bg-dark text-white">
+                <div class="container px-4 px-lg-5 text-center">
+                    <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
+                    <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">Download Now!</a>
+                </div>
+            </section>
+            -->
+            <!-- Contact-->
+            <section class="page-section" id="contact">
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-lg-8 col-xl-6 text-center">
+                            <h2 class="mt-0">Let's Get In Touch!</h2>
+                            <hr class="divider" />
+                            <p class="text-muted mb-5">Ready to start your next project with us? Send us a message and we will get back to you as soon as possible!</p>
+                        </div>
+                    </div>
+                    <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                        <div class="col-lg-6">
+                            <form id="contactForm" action="/send_email" method="POST">
+                                <!-- Name input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." required />
+                                    <label for="name">Full name</label>
+                                </div>
+                                <!-- Email address input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" required />
+                                    <label for="email">Email address</label>
+                                </div>
+                                <!-- Phone number input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="phone" name="phone" type="tel" placeholder="(123) 456-7890" />
+                                    <label for="phone">Phone number</label>
+                                </div>
+                                <!-- Message input-->
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" id="message" name="message" type="text" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                                <!-- Submit Button-->
+                                <div class="d-grid"><button class="btn btn-primary btn-xl" type="submit">Submit</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Map-->
+                <div class="container text-center">
+                    <h2 class="text-center mt-0">Find Us Here !</h2></div>
+                <section class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2752.7193734054567!2d6.160435777082739!3d46.37495547110363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c5dbb8ea28f73%3A0x3a5319dfdf515ae4!2sChem.%20de%20Marly%204%2C%201263%20Crassier!5e0!3m2!1sen!2sch!4v1707587204272!5m2!1sen!2sch" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <br/>
+                    <small><a href="https://www.google.com/maps/place/Chem.+de+Marly+4,+1263+Crassier/@46.3749555,6.1604358,17z/data=!3m1!4b1!4m6!3m5!1s0x478c5dbb8ea28f73:0x3a5319dfdf515ae4!8m2!3d46.3749555!4d6.1630107!16s%2Fg%2F11cs929l6f?entry=ttu"></a></small>
+                </section>
+{% include "footer.html" %}

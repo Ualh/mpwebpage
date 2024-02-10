@@ -1,0 +1,204 @@
+{% include "header.html" %}
+
+            <!-- En-tête -->
+            <header class="masthead">
+            {% with messages = get_flashed_messages() %}
+              {% if messages %}
+                {% for message in messages %}
+                  <div class="alert alert-success" role="alert">{{ message }}</div>
+                {% endfor %}
+              {% endif %}
+            {% endwith %}
+                <div class="container px-4 px-lg-5 h-100">
+                    <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                        <div class="col-lg-8 align-self-end">
+                            <h1 class="text-white font-weight-bold">
+                                Explorez votre potentiel créatif avec nos cours de poterie</h1>
+                            <hr class="divider" />
+                        </div>
+                        <div class="col-lg-8 align-self-baseline">
+                            <p class="text-white-75 mb-5">
+                                Plongez dans un monde où l'argile rencontre l'imagination,
+                                et chaque forme façonnée ouvre une nouvelle perspective. Nos cours et ateliers, dirigés par des experts, sont
+                                conçus pour des potiers de tous niveaux pour explorer, créer et s'exprimer à travers la poterie.
+                                Rejoignez-nous et libérez votre potentiel artistique dans un espace où l'art de la poterie ne connaît pas de limites.
+                                Aucune expérience préalable requise!</p>
+                            <a class="btn btn-primary btn-xl" href="#about">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- À propos -->
+            <section class="page-section bg-primary" id="about">
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <h2 class="text-white mt-0">Nous avons ce que vous recherchez !</h2>
+                            <hr class="divider divider-light" />
+                            <p class="text-white-75 mb-4">
+                                Je crois que la poterie est plus qu'un artisanat, c'est une façon de connecter avec la terre,
+                                de s'exprimer et de créer des liens. Ma mission est de fournir un espace accueillant et inspirant
+                                où les personnes de tous âges et de tous horizons peuvent découvrir leur potentiel créatif à travers la poterie.
+                            </p>
+                            <a class="btn btn-light btn-xl" href="#services">Commencez maintenant !</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Services -->
+            <section class="page-section" id="services">
+                <div class="container px-4 px-lg-5">
+                    <h2 class="text-center mt-0">À votre service</h2>
+                    <hr class="divider" />
+                    <div class="row gx-4 gx-lg-5">
+                        <div class="col-lg-3 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="mb-2"><i class="bi bi-palette fs-1 text-primary"></i></div>
+                                <h3 class="h4 mb-2">Ateliers de poterie</h3>
+                                <p class="text-muted mb-0">
+                                    Nos ateliers sont régulièrement mis à jour pour inspirer votre créativité et renouveler votre passion pour la poterie.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="mb-2"><i class="bi bi-brush fs-1 text-primary"></i></div>
+                                <h3 class="h4 mb-2">Guidance artistique</h3>
+                                <p class="text-muted mb-0">
+                                    Nous proposons des techniques modernes et un mentorat personnalisé pour affiner votre technique en poterie.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                                <h3 class="h4 mb-2">Communauté créative</h3>
+                                <p class="text-muted mb-0">
+                                    Rejoignez une communauté bienveillante d'artiste dans un espace sûr et encourageant.
+                                    Collaborer, apprendre et grandir avec des pairs qui partagent votre passion pour
+                                    la poterie.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 text-center">
+                            <div class="mt-5">
+                                <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
+                                <h3 class="h4 mb-2">Façonné avec passion</h3>
+                                <p class="text-muted mb-0">
+                                    Chaque pièce et choix de design est un témoignage de l'amour pour la poterie que nous partageons avec vous.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Portfolio-->
+            <div id="portfolio">
+                <div class="container-fluid p-0">
+                    <div class="row g-0">
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="portfolio-box" href="/static/assets/img/portfolio/fullsize/1.jpeg" title="Project Name">
+                                <img class="img-fluid" src="/static/assets/img/portfolio/thumbnails/1.jpeg" alt="..." />
+                                <div class="portfolio-box-caption">
+                                    <div class="project-category text-white-50">Théière</div>
+                                    <div class="project-name">Mayriam - Adultes - 2023 </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="portfolio-box" href="/static/assets/img/portfolio/fullsize/2.jpeg" title="Project Name">
+                                <img class="img-fluid" src="/static/assets/img/portfolio/thumbnails/2.jpeg" alt="..." />
+                                <div class="portfolio-box-caption">
+                                    <div class="project-category text-white-50">Plateau</div>
+                                    <div class="project-name">Nina - Enfant - 2023</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="portfolio-box" href="/static/assets/img/portfolio/fullsize/3.jpeg" title="Project Name">
+                                <img class="img-fluid" src="/static/assets/img/portfolio/thumbnails/3.jpeg" alt="..." />
+                                <div class="portfolio-box-caption">
+                                    <div class="project-category text-white-50">Plateau de Fruit</div>
+                                    <div class="project-name">Kari - Adulte - 2023</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="portfolio-box" href="/static/assets/img/portfolio/fullsize/4.jpeg" title="Project Name">
+                                <img class="img-fluid" src="/static/assets/img/portfolio/thumbnails/4.jpeg" alt="..." />
+                                <div class="portfolio-box-caption">
+                                    <div class="project-category text-white-50">Tasses</div>
+                                    <div class="project-name">Patricia - Adulte - 2023</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="portfolio-box" href="/static/assets/img/portfolio/fullsize/5.jpeg" title="Project Name">
+                                <img class="img-fluid" src="/static/assets/img/portfolio/thumbnails/5.jpeg" alt="..." />
+                                <div class="portfolio-box-caption">
+                                    <div class="project-category text-white-50">Tasse avant Cuisson</div>
+                                    <div class="project-name">Patricia - Adult - 2023</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="portfolio-box" href="/static/assets/img/portfolio/fullsize/6.jpeg" title="Project Name">
+                                <img class="img-fluid" src="/static/assets/img/portfolio/thumbnails/6.jpeg" alt="..." />
+                                <div class="portfolio-box-caption p-3">
+                                    <div class="project-category text-white-50">Crâne Mexicain</div>
+                                    <div class="project-name">Patricia - Adulte - 2023</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact -->
+            <section class="page-section" id="contact">
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-lg-8 col-xl-6 text-center">
+                            <h2 class="mt-0">Prenons contact !</h2>
+                            <hr class="divider" />
+                            <p class="text-muted mb-5">Prêt à commencer votre prochain projet avec nous ? Envoyez-nous un message et nous vous répondrons dès que possible !</p>
+                        </div>
+                    </div>
+                    <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                        <div class="col-lg-6">
+                            <form id="contactForm" action="/send_email" method="POST">
+                                <!-- Name input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="name" name="name" type="text" placeholder="Entrez votre nom..." required />
+                                    <label for="name">Nom complet</label>
+                                </div>
+                                <!-- Email address input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="email" name="email" type="email" placeholder="nom@example.com" required />
+                                    <label for="email">Adresse e-mail</label>
+                                </div>
+                                <!-- Phone number input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="phone" name="phone" type="tel" placeholder="(123) 456-7890" />
+                                    <label for="phone">Numéro de téléphone</label>
+                                </div>
+                                <!-- Message input-->
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" id="message" name="message" type="text" placeholder="Entrez votre message ici..." style="height: 10rem" required></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                                <!-- Submit Button-->
+                                <div class="d-grid"><button class="btn btn-primary btn-xl" type="submit">Envoyer</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Map -->
+                <div class="container text-center">
+                    <h2 class="text-center mt-0">Trouvez-nous ici !</h2></div>
+                <section class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2752.7193734054567!2d6.160435777082739!3d46.37495547110363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c5dbb8ea28f73%3A0x3a5319dfdf515ae4!2sChem.%20de%20Marly%204%2C%201263%20Crassier!5e0!3m2!1sen!2sch!4v1707587204272!5m2!1sen!2sch" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <br/>
+                    <small><a href="https://www.google.com/maps/place/Chem.+de+Marly+4,+1263+Crassier/@46.3749555,6.1604358,17z/data=!3m1!4b1!4m6!3m5!1s0x478c5dbb8ea28f73:0x3a5319dfdf515ae4!8m2!3d46.3749555!4d6.1630107!16s%2Fg%2F11cs929l6f?entry=ttu"></a></small>
+                </section>
+{% include "footer.html" %}
