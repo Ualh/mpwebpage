@@ -28,7 +28,7 @@ def handle_form_submission():
     message = request.form.get('message')
 
     # Construct email content
-    email_body = f"Name: {name}\nEmail: {email}\nMessage: {message}"
+    email_body = f"Name: {name}\nEmail: {email}\nPhone: {phone}\nMessage: {message}"
 
     # Send email
     send_email(email_body)
