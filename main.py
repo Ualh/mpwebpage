@@ -24,6 +24,7 @@ def handle_form_submission():
     # Extract form data
     name = request.form.get('name')
     email = request.form.get('email')
+    phone = request.form.get('phone')  # Capture the phone number
     message = request.form.get('message')
 
     # Construct email content
@@ -53,6 +54,7 @@ def send_email(body):
     with smtplib.SMTP_SSL('smtp.gmail.com', 465, context=context) as smtp:
         smtp.login(MY_EMAIL, MY_EMAIL_PASS)
         smtp.send_message(em)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
